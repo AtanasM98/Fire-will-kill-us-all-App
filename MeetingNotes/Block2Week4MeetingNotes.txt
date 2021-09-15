@@ -1,0 +1,12 @@
+14/5/19
+
+Chairman Nikolay
+Secretary Filippo 
+
+-Presentation of already implemented features before end of iteration 2
+
+/agreed to do complete before deadline
+
+-Implementation of fire spreading using air vent objects.
+-Finalising unity-application communication using sockets.
+-Bug fixing for statistics, including extinguishers. 

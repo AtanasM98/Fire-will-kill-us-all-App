@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A07F503-1AC1-47F1-8777-FF758509FD28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FireWillKillUsAll</RootNamespace>
+    <AssemblyName>FireWillKillUsAll</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AirFlow.cs" />
+    <Compile Include="Buffer.cs" />
+    <Compile Include="ColorToDrawable.cs" />
+    <Compile Include="Dijkstra.cs" />
+    <Compile Include="Dump.cs" />
+    <Compile Include="Extinguisher.cs" />
+    <Compile Include="Fire.cs" />
+    <Compile Include="Floor.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid.cs" />
+    <Compile Include="MyColor.cs" />
+    <Compile Include="Pathfinding.cs" />
+    <Compile Include="IUnityService1.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="Spread.cs" />
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsManager.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="ToUnity.cs" />
+    <Compile Include="UnityService1.cs" />
+    <Compile Include="Vector.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBitMap.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\3WallE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\3WallN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\3WallS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\3WallW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\4Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\BaseBitMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\CornerBotLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\CornerBotRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\CornerTopLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\CornerTopRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallExtinguisherE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallExtinguisherN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallExtinguisherS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallExtinguisherW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallHor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallVer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\3WallE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\CornerTopRight1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorN1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DoorW1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscN1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\FireEscW1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherN1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherW1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallHor1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\wallVer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4Wall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireEscS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireEscW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallExtinguisherW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallHor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallVer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3WallE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3WallN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3WallS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3WallW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornerBotLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornerBotRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornerTotLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornerTotRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoorE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoorN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoorS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoorW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireEscE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FireEscN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornerTopRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornerTopLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBitMap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBitMap25x21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BaseBitMap25x21v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\BaseBitMap25x21v2.png" />
+    <None Include="Resources\WaterDr.png" />
+    <None Include="Resources\Drop.png" />
+    <None Include="Resources\GraveStone.png" />
+    <None Include="Resources\DoorS - Closed.png" />
+    <None Include="Resources\DoorN - Closed.png" />
+    <None Include="Resources\DoorE - Closed.png" />
+    <None Include="Resources\DoorW - Closed.png" />
+    <None Include="Resources\Vent.png" />
+    <None Include="Resources\windowVer.png" />
+    <None Include="Resources\wIndowHor.png" />
+    <None Include="Resources\airCornerBotLeft.png" />
+    <None Include="Resources\airVer.png" />
+    <None Include="Resources\airHor.png" />
+    <None Include="Resources\airCornerTopRight.png" />
+    <None Include="Resources\airCornerTopLeft.png" />
+    <None Include="Resources\airCornerBotRight.png" />
+    <None Include="Resources\simpson.png" />
+    <None Include="Resources\johnny.png" />
+    <None Include="Resources\courage.png" />
+    <None Include="Resources\shaggy.png" />
+    <None Include="Resources\CharredTile.png" />
+    <None Include="Resources\FireTile.png" />
+    <None Include="Resources\EmptyTile.png" />
+    <None Include="Resources\Outside.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

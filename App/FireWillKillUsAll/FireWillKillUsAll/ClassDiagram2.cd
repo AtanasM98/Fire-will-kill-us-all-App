@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="FireWillKillUsAll.Extinguisher">
+    <Position X="10.5" Y="8.5" Width="2" />
+    <Members>
+      <Field Name="rand" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAEAAACAAAAggQAAAAAAAA=</HashCode>
+      <FileName>Extinguisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireWillKillUsAll.Fire">
+    <Position X="22" Y="4.5" Width="2.5" />
+    <NestedTypes>
+      <Delegate Name="FireWillKillUsAll.Fire.ExtinguishHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Fire.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIABAAAAAAACAAAAAAABAAAMAAAACAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Fire.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="tile" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FireWillKillUsAll.Floor">
+    <Position X="11.5" Y="5.75" Width="5" />
+    <Members>
+      <Method Name="DrawFireFromSpread" Hidden="true" />
+      <Method Name="GetAdjacentRooms" Hidden="true" />
+      <Method Name="HasFire" Hidden="true" />
+      <Method Name="OnTick" Hidden="true" />
+      <Field Name="SpeedTick" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Delegate Name="FireWillKillUsAll.Floor.FireDrawHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Floor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAABAAAIAABAAAAAACBAEAAAAAABgAgI=</HashCode>
+      <FileName>Floor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="rooms" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FireWillKillUsAll.Pathfinding">
+    <Position X="0.5" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAADAAEECAACCgAAAAAAAABAgAAAAAAAACAAIAAAAAA=</HashCode>
+      <FileName>Pathfinding.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="closedSet" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FireWillKillUsAll.Person">
+    <Position X="4.25" Y="4.5" Width="4.75" />
+    <Members>
+      <Field Name="currentLocation" Hidden="true" />
+      <Field Name="endLocation" Hidden="true" />
+      <Field Name="exitBlocked" Hidden="true" />
+      <Method Name="ExitOrExtinguisher" Hidden="true" />
+      <Field Name="extinguisher" Hidden="true" />
+      <Field Name="extinguisherBlocked" Hidden="true" />
+      <Field Name="isDead" Hidden="true" />
+      <Field Name="isSaved" Hidden="true" />
+      <Method Name="MoveDown" Hidden="true" />
+      <Method Name="MoveLeft" Hidden="true" />
+      <Method Name="MoveRight" Hidden="true" />
+      <Method Name="MoveUp" Hidden="true" />
+      <Method Name="NewAlgorithm" Hidden="true" />
+      <Field Name="nextTileColor" Hidden="true" />
+      <Field Name="previousLocation" Hidden="true" />
+      <Field Name="previousTileColor" Hidden="true" />
+      <Field Name="rand" Hidden="true" />
+      <Field Name="selfishChanged" Hidden="true" />
+      <Method Name="SetDestination" Hidden="true" />
+      <Field Name="ShaggyCounter" Hidden="true" />
+      <Field Name="startLocation" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIGGicCAAIIpAggwAAAIFGsECBDoAKiYQCDgAAAA4IE=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="A_STAR" />
+      <Property Name="Personality" />
+      <Property Name="Extinguisher" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FireWillKillUsAll.Room">
+    <Position X="18.5" Y="4.5" Width="3" />
+    <Members>
+      <Method Name="DecreaseFuel" Hidden="true" />
+      <Method Name="FindDoors" Hidden="true" />
+      <Method Name="GetFire" Hidden="true" />
+      <Method Name="GetFireDirection" Hidden="true" />
+      <Method Name="GetOutermostFires" Hidden="true" />
+      <Field Name="hasFlashover" Hidden="true" />
+      <Field Name="rand" Hidden="true" />
+      <Method Name="SpreadFireFromFlashover" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Delegate Name="FireWillKillUsAll.Room.FireSpreadHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Room.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="FireWillKillUsAll.Room.FlashoverHandler">
+        <TypeIdentifier>
+          <NewMemberFileName>Room.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ANAACKAQAQACCIdAQASAAICEAhBCKAWAQEAEw0AQwAA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="tiles" />
+      <Field Name="fires" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="FireWillKillUsAll.Statistics">
+    <Position X="21.75" Y="9.5" Width="3.75" />
+    <Members>
+      <Field Name="btnSave" Hidden="true" />
+      <Method Name="btnSave_Click" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="label1" Hidden="true" />
+      <Field Name="label2" Hidden="true" />
+      <Field Name="label3" Hidden="true" />
+      <Field Name="label4" Hidden="true" />
+      <Field Name="label5" Hidden="true" />
+      <Field Name="label6" Hidden="true" />
+      <Field Name="label7" Hidden="true" />
+      <Field Name="lbDeadCount" Hidden="true" />
+      <Field Name="lbEscapedCount" Hidden="true" />
+      <Field Name="lbFireSpawnCount" Hidden="true" />
+      <Field Name="lbFireSpreadsCount" Hidden="true" />
+      <Field Name="lbHappenings" Hidden="true" />
+      <Field Name="lblExtinguishCount" Hidden="true" />
+      <Field Name="lblSpawnCount" Hidden="true" />
+      <Field Name="panel1" Hidden="true" />
+      <Field Name="panel2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIBAAgAACCIEAhMABEiAEggKkAQAATEZgkSAGQsFAhA=</HashCode>
+      <FileName>Statistics.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireWillKillUsAll.Tile">
+    <Position X="10.5" Y="0.5" Width="5" />
+    <Members>
+      <Field Name="checkedInAlgorithm" Hidden="true" />
+      <Field Name="down" Hidden="true" />
+      <Field Name="left" Hidden="true" />
+      <Field Name="positionX" Hidden="true" />
+      <Field Name="positionY" Hidden="true" />
+      <Field Name="right" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+      <Field Name="startPos" Hidden="true" />
+      <Field Name="up" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IBQAAggABIACgACAAIAJIAEAAAEIAABABAAEAgAIgAI=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireWillKillUsAll.UnityService1" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="13.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>UnityService1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.356" Collapsed="true" />
+  </Class>
+  <Class Name="FireWillKillUsAll.Grid">
+    <Position X="12.25" Y="11.25" Width="5" />
+    <AssociationLine Name="Floor" Type="FireWillKillUsAll.Floor">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.11" Y="0.336" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQAEAAAAAAAAAFkAIABAAQABEBAAABAAAQAAAAIBAAA=</HashCode>
+      <FileName>Grid.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="List_Of_People" />
+      <Property Name="Floor" />
+      <Property Name="Statistics_Form" />
+      <Property Name="UnityService1" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="FireWillKillUsAll.IUnityService1">
+    <Position X="0.5" Y="13.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>IUnityService1.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="FireWillKillUsAll.PERSONALITY">
+    <Position X="0.75" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAEAAAAAAgEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

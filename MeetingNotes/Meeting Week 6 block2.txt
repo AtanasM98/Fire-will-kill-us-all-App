@@ -1,0 +1,39 @@
+Meeting 28.05.2019
+Start of meeting: 13:14
+--------------------------------------------------------
+Atanas starts by explaining what changes on his code he did on the Room class.
+He also adds that he started working on starting and stopping the simulation
+
+Yosif has been redoing the Unity service (how he sends info to Unity). He is working on adding a smooth
+animation instead of people jumping from tile to tile.
+
+Filippo explains that he has an idea of the background simulation. He explains that the idea is to take the map
+from the user and then detecting in which room the extinguisher is. This way for every 10 simulations, the extinguisher
+could switch place on the wall in the room.
+
+Teacher asks what we aim to achieve with these simulations.
+
+Another possibility would be to run the simulation N number of times with static extinguishers.
+
+Teacher suggests if there are 2 extinguishers in the hall, we could split the room into 2 halves, reducing the
+calculations.
+
+Stef explains that he is working on how to make multiple statistics for multiple simulations.
+He says that for the multiple simulations, he can have different statistics, connected to an instance of a simulation.
+
+The teacher tells Stef to look into Threading to make his work much easier.
+
+Atanas continues by saying he fixed an issue with the air flows. He explains to the teacher how he fixed it.
+He adds that he disabled the spawn fire/people buttons before a map has been loaded. Aside from that, he has added a button
+to save the current state of the bitmap, but it currently has some issues. He made a change where if the temperature
+reaches more than 100 degrees, people die.
+
+Teacher suggests a technique called Bit shifting. It involves associating entities with  different bits, as opposed to
+using Color and keeping track of so many colors.
+
+Atanas says he will look more into bit shifting.
+
+The teacher will send us an email later with the time of the final presentation.
+
+-----------------------------------------------------------------------
+End of Meeting: 13:43

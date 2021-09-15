@@ -1,0 +1,49 @@
+Meeting 1
+Time 13:05
+Date 12.02.2019
+----------------------------------------------
+Aim to have a final solution by the end of the week
+
+We come up with requrements, following the minimal requirements
+
+Yosif explains what our ideas for the app are (machine learning algorithm)
+
+Atanas explains we will use Unity and C#
+
+Teacher is impressed with our ideas so far
+
+Teacher explains we need to provide some way to infuence the simulation while it's running
+
+Pick a new place for fire to spawn, spawn faulty extinguisher, provoke someone to extinguish fire.
+Pick one of these ideas and implement it.
+
+We should not rely a lot on Unity; only use the animation, nothing else. Most of code should be done by us
+
+In the end of the project we should have some sort of visualisation
+
+Teacher confirms that we understand what we have to do for the project
+
+If we need technical advise in detail, we need very good reason for it
+
+We are allowed to ask for feedback once per iteration
+
+We need to ask specific questions
+
+First half we discuss what we will be doing, second half is the basics/core of the application (the algorithm)
+
+We can show deliverables via Git by tagging them and sending an email to the teacher
+
+Marked assignments need to be handed in BEFORE the deadlines (always Monday, 8am at the latest)
+
+We need to come up with a project leader, who will be communicating with the tutor
+
+This block is Project Plan (by the end of the week), URS doc (next week) and working algorithm
+
+URS expectations
+	name of use case and what it does;
+	don't worry about MSS
+	later with time we would keep adding more and more details to the URS
+
+----------------------------------------------------------------------------
+END OF Meeting
+Time 13:34

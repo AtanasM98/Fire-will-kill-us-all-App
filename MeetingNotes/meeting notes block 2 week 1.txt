@@ -1,0 +1,90 @@
+Meeting Notes
+16.04.2019
+
+Yosif asked the teacher how the presentation went
+
+Teacher says he was impressed by the presentation
+
+Yosif explains what we currently have, which was not shown in the presentation,
+such as Unity communication and statistics form
+
+Stef shows the statistics form and describes what its purpose is.
+He shows off the live happenings (a person spawn, a fire spread, etc.)
+
+Teacher asks what the main purpose of the statistics is
+
+Stef explains that it is to keep track of how many people are spawned, how many died, for overview.
+
+Teacher asks how the communication is done between the stats and the main form
+
+Stef explains that it is done via events and teacher is impressed
+
+Teacher told us that we are doing a very good job and we are progressing very fast. (WE KILLED IT FOLKS)
+
+Teacher says he will give us a 9.0 for iteration 1.
+
+Teacher says we need to be more specific and come to a conclusion today about the plan for
+iteration 2.
+
+Atanas explains he made it abstract because we cannot say or determine what exactly is going to happen during
+iteration 2
+
+Teacher says he is interested in seeing the communication between the app and Unity.
+
+Yosif explains his vision that it is not going to be mind blowing animations. He continues by saying
+the plan is to move fairly smoothly for the visual animation (e.g. 3 moves per tick)
+
+Atanas continues Yosif's point how we could use events for calculations and send the appropriate messages
+to Unity
+
+Teacher asks if it will be a real time feed to Unity, and Atanas and Yosif confirm this.
+
+Filippo asks if it is a problem that we did not mention a necessary connection to the internet
+for the WCF service that Unity and main app use to communicate. Teacher says it is not a concern.
+
+We need final URS and Design Document by the end of iteration 2. Teacher needs them both to discuss further
+progress in iteration 3
+
+We need Unit tests for the end of iteration 2 as well.
+
+Teacher is impressed that we are researching how fire spreads realisticly
+
+Atanas says that it will not be 100% realistic, but many realistic features will be present
+
+Filippo continues by saying they are researching a paper on how fire is spreading in real life
+and thinking about how to implement the features into the simulation
+
+Teacher would like to see next week that we specify what exactly we will use in the Unity viewer
+He also wants to know if we want to work on air flow and burning objects for sure, and what we will
+have by the end of iteration 2
+
+For statistics, teacher is interested in what to expect from it.
+
+Stef explains that we have not yet thought about it deeply.
+
+Atanas mentions that after all person types have been implemented, then we can focus
+on showing the relevant information for the statistics (such as efficient fire extinguisher spawns)
+
+Stef continues by saying that currently statistics cannot display what the good locations for the extinguishers
+are, since people cannot put fires out yet.
+
+Filippo and Yosif say we can leave for iteration 3 the ability to run 10-50 identical simulations
+in order to determine more accurate statistics in the end.
+
+Teacher says what we aim for the prototype. There can be bugs, but the main version should be there.
+We need to explain this next week.
+
+Yosif mentions he aims to figure out how to send the map to Unity and visualise it for the prototype
+
+Teacher says the UML is not useful at the time for him, as it is too big and complicated
+
+We need to regenerate the UML diagrams, exclude the forms, separate classes, in order to be more readable
+
+By next week, we need business logic UML and relationships between the classes. Basically, a better UML
+
+We need to fill out a peer review form and next week we will discuss the results. The form will be sent via email.
+
+Atanas is curious why we did not get a 10.0
+Teacher says that if we had a Unity communication, we would have got it.
+
+END OF MEETING
