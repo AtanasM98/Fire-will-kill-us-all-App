@@ -4,6 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Created AirFlow code in rooms.
+// This is used to spread fire in directions
+// That would imitate how air would move in the buildings.
+
 namespace FireWillKillUsAll
 {
     class AirFlow

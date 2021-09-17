@@ -7,6 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
+// I've created the room unit tests to test how the fire works. 
+// With this tests I've fixed bugs and optimized my code a lot.
+
 namespace FireWillKillUsAll.Tests
 {
     [TestClass()]

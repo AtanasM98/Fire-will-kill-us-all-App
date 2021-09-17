@@ -12,6 +12,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Worked on Start and Stop buttons for simulation
+// so it can be paused during the execution
 
 namespace FireWillKillUsAll
 {

@@ -5,6 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// I've done this class that is used to contain the logic 
+// For the fire in the rooms. It can spread to other rooms
+// And can be extinguished.
+
 namespace FireWillKillUsAll
 {
     public class Fire

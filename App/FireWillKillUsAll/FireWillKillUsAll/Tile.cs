@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Worked on color compositions for the tiles
+// So that multiple sprites could be drawn on the simulations.
+
 namespace FireWillKillUsAll
 {
     public class Tile

@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+// Worked on this file. This is where fires transfer from room to room.
+
 namespace FireWillKillUsAll
 {
     public class Floor
